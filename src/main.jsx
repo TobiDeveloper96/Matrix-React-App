@@ -8,7 +8,8 @@ const castMembers = [
   {
     name: "Keanu Reeves",
     role: "Neo / Thomas Anderson",
-    detail: "A programmer and hacker who discovers the truth behind his reality.",
+    detail:
+      "A programmer and hacker who discovers the truth behind his reality.",
   },
   {
     name: "Laurence Fishburne",
@@ -100,7 +101,9 @@ class MatrixRain extends Component {
   }
 
   render() {
-    return <canvas className="matrix-rain" ref={this.canvasRef} aria-hidden="true" />;
+    return (
+      <canvas className="matrix-rain" ref={this.canvasRef} aria-hidden="true" />
+    );
   }
 }
 
@@ -144,8 +147,7 @@ class App extends Component {
       <>
         <section className="hero" id="home">
           <p className="eyebrow">
-            <span className="eyebrow-line" />
-            A SIGNAL IN THE NOISE
+            <span className="eyebrow-line" />A SIGNAL IN THE NOISE
           </p>
           <h1>
             Wake up<span className="green-period">.</span>
@@ -164,7 +166,9 @@ class App extends Component {
             onClick={this.handleConnectionToggle}
             type="button"
           >
-            <span>{connected ? "CONNECTION ACTIVE" : "FOLLOW THE WHITE RABBIT"}</span>
+            <span>
+              {connected ? "CONNECTION ACTIVE" : "FOLLOW THE WHITE RABBIT"}
+            </span>
             <span className="button-arrow" aria-hidden="true">
               {connected ? "✓" : "↗"}
             </span>
@@ -203,16 +207,15 @@ class App extends Component {
           <article className="film-copy">
             <h2>Choose your reality.</h2>
             <p>
-              Released in 1999, <em>The Matrix</em> follows Thomas Anderson,
-              a hacker known as Neo, as he is drawn into a hidden conflict
-              between humanity and intelligent machines. Guided by Morpheus
-              and Trinity, Neo begins to question the simulated world he has
-              always known.
+              Released in 1999, <em>The Matrix</em> follows Thomas Anderson, a
+              hacker known as Neo, as he is drawn into a hidden conflict between
+              humanity and intelligent machines. Guided by Morpheus and Trinity,
+              Neo begins to question the simulated world he has always known.
             </p>
             <p>
-              Blending science fiction, action, and philosophical questions,
-              the film became known for its distinctive visual style and
-              imaginative approach to action filmmaking.
+              Blending science fiction, action, and philosophical questions, the
+              film became known for its distinctive visual style and imaginative
+              approach to action filmmaking.
             </p>
           </article>
           <aside className="fact-panel" aria-label="Film details">
@@ -328,7 +331,7 @@ class App extends Component {
         {this.renderPage()}
 
         <footer className="footer">
-          <span>THERE IS NO SPOON</span>
+          <span>@by TobiDev</span>
           <span className="footer-center">WAKE · QUESTION · ESCAPE</span>
           <span>EST. 1999</span>
         </footer>
