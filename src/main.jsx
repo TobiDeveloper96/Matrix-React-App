@@ -331,7 +331,7 @@ class App extends Component {
         {this.renderPage()}
 
         <footer className="footer">
-          <span>@by TobiDev</span>
+          <span>TobiDev</span>
           <span className="footer-center">WAKE · QUESTION · ESCAPE</span>
           <span>EST. 1999</span>
         </footer>
