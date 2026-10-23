@@ -13,6 +13,8 @@ An interactive, Matrix-inspired web experience built as a frontend portfolio pro
 
 React 18 · Vite · CSS
 
+## Live-Demo: https://matrix-react-app.vercel.app/
+
 ## Run locally
 
 Install dependencies and start the development server:
